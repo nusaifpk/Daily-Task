@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>testing page</title>
+  </head>
+  <body>
+    <h1>
+      
+      Given a string and an array of index numbers, return the characters of the string rearranged to be in the order 
+      specified by the accompanying array.<br><br>
+      
+      Eg: scramble('abcd', [0,3,1,2]) -> 'acdb'
+
+  </h1>
+    <p>(Check Your Console)</p>
+
+
+
+    <script>
+
+      
+      let string = 'abcd';
+      const a = [0,3,1,2];
+      
+      let res = '';
+
+      for (let i=0;i<string.length;i++)
+      {
+        for(let j=0;j<a.length;j++)
+        {
+          if(i==a[j])
+          { 
+            res = res + string[j];
+            break;
+          }
+        }     
+      }
+      console.log(res);
+
+
+    </script>
+  </body>
+</html>
